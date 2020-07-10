@@ -1,0 +1,2190 @@
+Model {
+  Name			  "adams_sys_"
+  Version		  7.6
+  MdlSubVersion		  0
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.94"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+  }
+  SavedCharacterEncoding  "windows-1252"
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  DataTypeOverrideAppliesTo "AllNumericTypes"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  MaxMDLFileLineLength	  120
+  Created		  "Wed Sep 16 16:54:43 2009"
+  Creator		  "MSC Software"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "Administrator"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Wed May 03 15:56:23 2017"
+  RTWModifiedTimeStamp	  415727782
+  ModelVersionFormat	  "1.%<AutoIncrement:94>"
+  ConfigurationManager	  "none"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock off
+  BufferReuse		  on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      1
+      Version		      "1.10.0"
+      Array {
+	Type			"Handle"
+	Dimension		8
+	Simulink.SolverCC {
+	  $ObjectID		  2
+	  Version		  "1.10.0"
+	  StartTime		  "0.0"
+	  StopTime		  "1.0"
+	  AbsTol		  "1e-6"
+	  FixedStep		  "auto"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "SingleTasking"
+	  ConcurrentTasks	  off
+	  Solver		  "ode45"
+	  SolverName		  "ode45"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  3
+	  Version		  "1.10.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  off
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  4
+	  Version		  "1.10.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    4
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    Cell		    "OptimizeModelRefInitCode"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  off
+	  BooleanDataType	  off
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseIntDivNetSlope	  off
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  StrengthReduction	  off
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  2147483647
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  on
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  5
+	  Version		  "1.10.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"none"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "TryResolveAllWithWarning"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "none"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "warning"
+	  MultiTaskCondExecSysMsg "none"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "Use local settings"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "None"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "warning"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "warning"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  6
+	  Version		  "1.10.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  32
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "None"
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  on
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  7
+	  Version		  "1.10.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  8
+	  Version		  "1.10.0"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  on
+	  SimBuildMode		  "sf_incremental_build"
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  9
+	  Version		  "1.10.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    "IncludeHyperlinkInReport"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "grt.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  TemplateMakefile	  "grt_unix.tmf"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  on
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  GenerateSLWebview	  off
+	  RTWCompilerOptimization "Off"
+	  CheckMdlBeforeBuild	  "Off"
+	  CustomRebuildMode	  "OnUpdate"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      10
+	      Version		      "1.10.0"
+	      Array {
+		Type			"Cell"
+		Dimension		16
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"InsertBlockDesc"
+		Cell			"SFDataObjDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      11
+	      Version		      "1.10.0"
+	      Array {
+		Type			"Cell"
+		Dimension		12
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"MultiInstanceERTCode"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportNonInlinedSFcns"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      TargetFunctionLibrary   "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      ERTCodeCoverageTool     "None"
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns off
+	      CombineSignalStateStructs	off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      PortableWordSizes	      off
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    off
+	      AutosarCompliant	      off
+	      UseMalloc		      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition    " [ 360, 285, 1240, 915 ] "
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    1
+  }
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Clock
+      DisplayTime	      off
+    }
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchInputForFeedbackSignals off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Mux
+      Inputs		      "4"
+      DisplayOption	      "none"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      "S-Function"
+      FunctionName	      "system"
+      SFunctionModules	      "''"
+      PortCounts	      "[]"
+      SFunctionDeploymentMode off
+    }
+    Block {
+      BlockType		      Scope
+      ModelBased	      off
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      StateSpace
+      A			      "1"
+      B			      "1"
+      C			      "1"
+      D			      "1"
+      X0		      "0"
+      AbsoluteTolerance	      "auto"
+      ContinuousStateAttributes	"''"
+      Realization	      "auto"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      DataTypeOverrideAppliesTo	"AllNumericTypes"
+      MinMaxOverflowLogging   "UseLocalSettings"
+      Variant		      off
+      GeneratePreprocessorConditionals off
+    }
+    Block {
+      BlockType		      ToWorkspace
+      VariableName	      "simulink_output"
+      MaxDataPoints	      "1000"
+      Decimation	      "1"
+      SampleTime	      "0"
+      FixptAsFi		      off
+    }
+  }
+  System {
+    Name		    "adams_sys_"
+    Location		    [132, 471, 615, 788]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "68"
+    Block {
+      BlockType		      Scope
+      Name		      "L1f        "
+      SID		      "65"
+      Ports		      [1]
+      Position		      [625, 227, 650, 253]
+      Floating		      off
+      Location		      [188, 365, 512, 604]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      DataFormat	      "Array"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "L2f        "
+      SID		      "66"
+      Ports		      [1]
+      Position		      [640, 237, 665, 263]
+      Floating		      off
+      Location		      [188, 365, 512, 604]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      DataFormat	      "Array"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "L3f        "
+      SID		      "67"
+      Ports		      [1]
+      Position		      [655, 247, 680, 273]
+      Floating		      off
+      Location		      [188, 365, 512, 604]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      DataFormat	      "Array"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "L4f        "
+      SID		      "68"
+      Ports		      [1]
+      Position		      [670, 257, 695, 283]
+      Floating		      off
+      Location		      [188, 365, 512, 604]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      DataFormat	      "Array"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Q_1        "
+      SID		      "55"
+      Ports		      [1]
+      Position		      [475, 127, 500, 153]
+      Floating		      off
+      Location		      [188, 365, 512, 604]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      DataFormat	      "Array"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Q_10       "
+      SID		      "56"
+      Ports		      [1]
+      Position		      [490, 137, 515, 163]
+      Floating		      off
+      Location		      [188, 365, 512, 604]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      DataFormat	      "Array"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Q_2        "
+      SID		      "54"
+      Ports		      [1]
+      Position		      [460, 117, 485, 143]
+      Floating		      off
+      Location		      [188, 365, 512, 604]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      DataFormat	      "Array"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Q_3        "
+      SID		      "53"
+      Ports		      [1]
+      Position		      [445, 107, 470, 133]
+      Floating		      off
+      Location		      [188, 365, 512, 604]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      DataFormat	      "Array"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Q_4        "
+      SID		      "52"
+      Ports		      [1]
+      Position		      [430, 97, 455, 123]
+      Floating		      off
+      Location		      [188, 365, 512, 604]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      DataFormat	      "Array"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Q_5        "
+      SID		      "51"
+      Ports		      [1]
+      Position		      [415, 87, 440, 113]
+      Floating		      off
+      Location		      [188, 365, 512, 604]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      DataFormat	      "Array"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Q_6        "
+      SID		      "60"
+      Ports		      [1]
+      Position		      [550, 177, 575, 203]
+      Floating		      off
+      Location		      [188, 365, 512, 604]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      DataFormat	      "Array"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Q_7        "
+      SID		      "59"
+      Ports		      [1]
+      Position		      [535, 167, 560, 193]
+      Floating		      off
+      Location		      [188, 365, 512, 604]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      DataFormat	      "Array"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Q_8        "
+      SID		      "58"
+      Ports		      [1]
+      Position		      [520, 157, 545, 183]
+      Floating		      off
+      Location		      [188, 365, 512, 604]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      DataFormat	      "Array"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Q_9        "
+      SID		      "57"
+      Ports		      [1]
+      Position		      [505, 147, 530, 173]
+      Floating		      off
+      Location		      [188, 365, 512, 604]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      DataFormat	      "Array"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "R1f        "
+      SID		      "61"
+      Ports		      [1]
+      Position		      [565, 187, 590, 213]
+      Floating		      off
+      Location		      [188, 365, 512, 604]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      DataFormat	      "Array"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "R2f        "
+      SID		      "62"
+      Ports		      [1]
+      Position		      [580, 197, 605, 223]
+      Floating		      off
+      Location		      [188, 365, 512, 604]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      DataFormat	      "Array"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "R3f        "
+      SID		      "63"
+      Ports		      [1]
+      Position		      [595, 207, 620, 233]
+      Floating		      off
+      Location		      [188, 365, 512, 604]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      DataFormat	      "Array"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "R4f        "
+      SID		      "64"
+      Ports		      [1]
+      Position		      [610, 217, 635, 243]
+      Floating		      off
+      Location		      [188, 365, 512, 604]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      DataFormat	      "Array"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "S-Function"
+      SID		      "1"
+      Ports		      [1, 1]
+      Position		      [135, 70, 235, 120]
+      BackgroundColor	      "red"
+      LoadFcn		      "%check based on dialog box setting for when setting by popup menu                               "
+      "              \nif exist('ADAMS_solver_type')                                                                   "
+      "              \n  if strcmp(ADAMS_solver_type,'C++')                                                            "
+      "              \n    set_param(gcb,'exetyp','C++');                                                              "
+      "              \n  else                                                                                          "
+      "              \n    set_param(gcb,'exetyp','Fortran');                                                          "
+      "              \n  end                                                                                           "
+      "              \nelse                                                                                            "
+      "              \n  set_param(gcb,'exetyp','C++');                                                                "
+      "              \nend                                                                                             "
+      "              \n%set the mode if using acar_solver                                                              "
+      "              \n%REQUIRED HERE BECAUSE BELOW CAUSES MDLTERMINATE TO BE CALLED 2 TIMES IN MIDDLE OF SIMULATION WH"
+      "EN SET IN MASK\n                                                                                                "
+      "              \n%enable the direct feedthrough, sim mode, anim mode parameters by default                       "
+      "              \n                                                                                                "
+      "              \nif exist('set_some_params_states')                                                              "
+      "              \n                                                                                                "
+      "              \n  set_some_params_states({'dft','modsim','modani'},{'on','on','on'},'MaskEnables',gcb)          "
+      "              \n  %turn on direct feedthrough option                                                            "
+      "              \n  set_some_params_states({'dft'},{'on'},'MaskVisibilities',gcb)                                 "
+      "              \n                                                                                                "
+      "              \n end                                                                                            "
+      "              \n                                                                                                "
+      "              \n                                                                                                "
+      "              \nif exist('ADAMS_exec')                                                                          "
+      "              \n  if and(strcmp(get_param(gcb,'exesol'),'ADAMS_exec'),strcmp(ADAMS_exec,'acar_solver'))         "
+      "              \n    %set the sim mode to discrete -- only supported mode                                        "
+      "              \n    set_param(gcb,'modsim','discrete')                                                          "
+      "              \n     %turn off direct feedthrough option                                                        "
+      "              \n     set_some_params_states({'dft'},{'off'},'MaskVisibilities',gcb)                             "
+      "              \n    %set the animation mode to batch -- only supported mode                                     "
+      "              \n    set_param(gcb,'modani','batch')                                                             "
+      "              \n    %disable the direct feedthrough, sim mode, anim mode parameters                             "
+      "              \n    set_some_params_states({'modsim','modani'},{'off','off'},'MaskEnables',gcb)                 "
+      "              \n  end                                                                                           "
+      "              \nend                                                                                             "
+      "              "
+      InitFcn		      "clear mex"
+      OpenFcn		      "open_system(gcb,'mask')                                                                         "
+      "                                                 \nif not(exist('set_some_params_states'))                      "
+      "                                                                                    \n                          "
+      "                                                                                                                "
+      "       \nwarning('The script \"set_some_params_states.m\" cannot be found in the MATLAB PATH.  Cannot update the"
+      " ADAMS Plant S-Function parameters.')       \n                                                                  "
+      "                                                                               \nwarning('Recommended action(opt"
+      "ional):  run the Adams/Controls .m file first to help choose the correct settings in the Adams S-Function block."
+      "')\n                                                                                                            "
+      "                                     \nend                                                                      "
+      "                                                                        "
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      MaskType		      "Adams Plant"
+      MaskDescription	      "Simulate any Adams plant model either in Adams/Solver form (.adm file) or in Adams/View f"
+      "orm (.cmd file)"
+      MaskHelp		      "<html>\nThis S-Function represents the non-linear Adams Plant with the inputs sent to the Adams"
+      " model <br>\n and the outputs generated by the Adams model.  See the Adams/Controls documentation for more <br>\n"
+      "information.  This plant uses the following variables:<br>\n<br>\n<b>ADAMS_sysdir  :</b> Adams installation dire"
+      "ctory<br>\n<b>ADAMS_inputs  :</b> Input variables View names vector<br>\n<b>ADAMS_outputs :</b> Outputs variable"
+      "s View names vector<br>\n<b>ADAMS_prefix  : </b>ADAMS model files prefix (.adm, .cmd); also doubles as output fi"
+      "les prefix<br>\n<b>ADAMS_exec :</b> Adams/Solver user library or keyword (e.g., acar_solver)<br> \n<b>ADAMS_stat"
+      "ic :</b> yes|no - initial static before Co-simulation(discrete)/Function Evaluation(continuous)<br>\n<b>ADAMS_in"
+      "it :</b>Initialization commands (i.e., Adams/View or Solver commands, depending on setting for Animation mode)<b"
+      "r>\n<b>ADAMS_cwd : </b> Current working directory (for TCP/IP)<br>\n<b>ADAMS_host : </b>Name of Adams server hos"
+      "t (for TCP/IP)<br>\n<b>ADAMS_mode :</b> Linear or non-linear (i.e., co-sim, function eval)<br>\n<b>ADAMS_solver_"
+      "type :</b>Fortran or C++ (used to set popup menu when first loaded) <br>\n\n\n<br>\nThe following settings can b"
+      "e chosen:<br>\n<br>\n<b>Adams/Solver type:</b>  Fortran or C++ (will also set ADAMS_solver_type)<br>\n<b>Interpr"
+      "ocess option:</b> Pipe(DDE) or TCP/IP; TCP/IP can allow different machines run Adams and MATLAB<br>\n<b>Animatio"
+      "n mode:</b> batch (Solver, uses .adm) or interactive (View, uses .cmd)<br>\n<b>Simulation mode:</b> discrete (Co"
+      "-simulation) or continuous (Function Evaluation)<br>\n<b>Discrete Computational Order - Simulink Lead Adams:</b>"
+      " for discrete mode, chooses if Simulink leads the integration (yes) or lags (no);<br> if set to \"no\", can remo"
+      "ve algebraic loop<br>\n<b>Plant input interpolation order:</b> 0 = zero-order hold; 1 = linear (discrete mode on"
+      "ly, where Simulink leads)<br>\n<b>Plant output extrapolation order:</b> 0 = zero-order hold;1 = linear(discrete "
+      "mode only, where Simulink leads)<br>\n<b>Plant input extrapolation order:</b> 0 = zero-order hold; 1 = linear (d"
+      "iscrete mode only, where Adams leads)<br>\n<b>Plant output interpolation order:</b> 0 = zero-order hold;1 = line"
+      "ar(discrete mode only, where Adams leads)<br>\n<b>Direct feedthrough:</b> yes|no - yes = Input directly effect o"
+      "utput(continuous mode-only)<br> \n<b>Communication interval:</b> Time step at which Co-simulation exchange infor"
+      "mation (e.g.,0.005); also controls <br>output for continuous mode (Function Evaluation)<br>\n<b>Number of commun"
+      "ications per output step: </b>Sets Adams output rate (.res, .req, .gra) integer value (default: 1)<br>\n</html>"
+      MaskPromptString	      "Adams install directory|Adams/View input names|Adams/View output names|Adams model file "
+      "prefix|Output files prefix (opt.: if blank - no output)|User executable (opt.: if blank - use standard)|Initial "
+      "static simulation flag |Initialization commands|Adams/Solver type|Interprocess option|Adams working directory|Ad"
+      "ams host|Animation mode|Simulation mode|Direct feedthrough |Discrete Computational Order - Simulink Leads Adams|"
+      "Plant input interpolation order|Plant output extrapolation order|Plant input extrapolation order|Plant output in"
+      "terpolation order|Communication interval|Number of communications per output step|More parameters"
+      MaskStyleString	      "edit,edit,edit,edit,edit,edit,edit,edit,popup(Fortran|C++),popup(PIPE(DDE)|TCP/IP),edit,e"
+      "dit,popup(batch|interactive),popup(discrete|continuous),popup(no|yes),popup(yes|no),popup(0|1),popup(0|1),popup("
+      "0|1),popup(0|1),edit,edit,checkbox"
+      MaskVariables	      "exevie=@1;nam_in=@2;namout=@3;nampre=@4;outfil=@5;exesol=@6;stat=@7;inicmd=@8;exetyp=&9;com"
+      "typ=&10;workdir=@11;ada_host=@12;modani=&13;modsim=&14;dft=&15;simulink_lead_cosim=&16;pin_interp_order=&17;pout"
+      "_extrap_order=&18;pin_extrap_order=&19;pout_interp_order=&20;dt_out=@21;o_rate=@22;more=@23;"
+      MaskTunableValueString  "on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on"
+      MaskCallbackString      "|||||if exist('set_some_params_states')\n%enable the direct feedthrough, sim mode, anim"
+      " mode parameters\nset_some_params_states({'dft','modsim','modani'},{'on','on','on'},'MaskEnables',gcb)\n%turn on"
+      " direct feedthrough option\nset_some_params_states({'dft'},{'on'},'MaskVisibilities',gcb) \nend\n\nif exist('ADA"
+      "MS_exec')   \n  if and(strcmp(get_param(gcb,'exesol'),'ADAMS_exec'),strcmp(ADAMS_exec,'acar_solver'))\n    %set "
+      "the sim mode to discrete -- only supported mode\n    %REMOVED:  BELOW CAUSES MDLTERMINATE TO BE CALLED 2 TIMES I"
+      "N MIDDLE OF SIMULATION\n    %Now in LoadFcn callback\n    %set_param(gcb,'modsim','discrete')\n     %turn off di"
+      "rect feedthrough option\n    set_some_params_states({'dft'},{'off'},'MaskVisibilities',gcb)\n    %set the animat"
+      "ion mode to batch -- only supported mode\n    %REMOVED:  BELOW CAUSES MDLTERMINATE TO BE CALLED 2 TIMES IN MIDDL"
+      "E OF SIMULATION\n    %Now in LoadFcn callback\n    %set_param(gcb,'modani','batch')\n    %disable the direct fee"
+      "dthrough, sim mode, anim mode parameters\n    set_some_params_states({'modsim','modani'},{'off','off'},'MaskEnab"
+      "les',gcb)\n  end\nend\n\n\n\n|||if strcmp(get_param(gcb,'exetyp'),'C++')\n    ADAMS_solver_type='C++';\nelse\n  "
+      "  ADAMS_solver_type='Fortran';\nend|if exist('set_some_params_states')\nif strcmp(get_param(gcb,'comtyp'),'PIPE("
+      "DDE)')\n    %turn off cwd, host options\n    set_some_params_states({'ada_host','workdir'},{'off','off'},'MaskVi"
+      "sibilities',gcb)\nelse%if strcmp(get_param(gcb,'modsim'),'TCP/IP')\n    %turn on cwd, host options\n    set_some"
+      "_params_states({'ada_host','workdir'},{'on','on'},'MaskVisibilities',gcb)\nend\nend||||if exist('set_some_params"
+      "_states')\nif strcmp(get_param(gcb,'modsim'),'discrete')\n     %turn off direct feedthrough option\n    set_some"
+      "_params_states({'dft'},{'off'},'MaskVisibilities',gcb)\n    %turn on discrete co-sim type if want to see more\n "
+      "   if strcmp(get_param(gcb,'more'),'on')\n        set_some_params_states({'simulink_lead_cosim'},{'on'},'MaskVis"
+      "ibilities',gcb)\n    end\n    if strcmp(get_param(gcb,'simulink_lead_cosim'),'yes')\n        %turn on interpolat"
+      "ion/extrapolation options\n        set_some_params_states({'pin_interp_order','pout_extrap_order',},{'on','on'},"
+      "'MaskVisibilities',gcb)\n    else\n        set_some_params_states({'pin_extrap_order','pout_interp_order'},{'on'"
+      ",'on'},'MaskVisibilities',gcb)\n    end     \nelse%if strcmp(get_param(gcb,'modsim'),'continuous')\n     %turn o"
+      "ff direct feedthrough option\n    set_some_params_states({'dft'},{'on'},'MaskVisibilities',gcb)\n    %turn off i"
+      "nterpolation/extrapolation options\n    set_some_params_states({'pin_interp_order','pout_extrap_order','pin_extr"
+      "ap_order','pout_interp_order','simulink_lead_cosim'},{'off','off','off','off','off'},'MaskVisibilities',gcb)\nen"
+      "d\nend||if exist('set_some_params_states')\nif (strcmp(get_param(gcb,'simulink_lead_cosim'),'yes') && strcmp(get"
+      "_param(gcb,'modsim'),'discrete'))\n     %turn off unused interpolate/extrapolate options\n    set_some_params_st"
+      "ates({'pin_extrap_order','pout_interp_order'},{'off','off'},'MaskVisibilities',gcb)\n    %turn on used interpola"
+      "te/extrapolate options\n    set_some_params_states({'pin_interp_order','pout_extrap_order'},{'on','on'},'MaskVis"
+      "ibilities',gcb)   \nelseif (strcmp(get_param(gcb,'simulink_lead_cosim'),'no') && strcmp(get_param(gcb,'modsim'),"
+      "'discrete'))\n    %turn on used interpolate/extrapolate options\n    set_some_params_states({'pin_extrap_order',"
+      "'pout_interp_order'},{'on','on'},'MaskVisibilities',gcb)\n     %turn off unused interpolate/extrapolate options\n"
+      "    set_some_params_states({'pin_interp_order','pout_extrap_order'},{'off','off'},'MaskVisibilities',gcb) \nend\n"
+      "end|||||||if exist('set_some_params_states')\nif (strcmp(get_param(gcb,'more'),'on'))\n     %turn on infrequentl"
+      "y used options\n    set_some_params_states({'exevie','nam_in','namout','exesol','stat','inicmd'},{'on','on','on'"
+      ",'on','on','on'},'MaskVisibilities',gcb) \n    if strcmp(get_param(gcb,'modsim'),'discrete')\n        set_some_p"
+      "arams_states({'simulink_lead_cosim'},{'on'},'MaskVisibilities',gcb)\n    end\nelseif (strcmp(get_param(gcb,'more"
+      "'),'off'))\n    %turn off infrequently used options\n    set_some_params_states({'exevie','nam_in','namout','exe"
+      "sol','stat','inicmd'},{'off','off','off','off','off','off'},'MaskVisibilities',gcb)\n    if strcmp(get_param(gcb"
+      ",'modsim'),'discrete')\n        set_some_params_states({'simulink_lead_cosim'},{'off'},'MaskVisibilities',gcb)\n"
+      "    end\nend\nend\n"
+      MaskEnableString	      "on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on"
+      MaskVisibilityString    "off,off,off,on,on,off,off,off,on,on,off,off,on,on,on,off,on,on,off,off,on,on,on"
+      MaskToolTipString	      "on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on"
+      MaskDisplay	      "disp( 'MSC Software' )"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskPortRotate	      "default"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "ADAMS_sysdir|ADAMS_inputs|ADAMS_outputs|ADAMS_prefix|ADAMS_prefix|ADAMS_exec|ADAMS_static"
+      "|[ADAMS_init]|C++|PIPE(DDE)|ADAMS_cwd|ADAMS_host|batch|discrete|no|yes|0|0|0|0|0.005|1|off"
+      System {
+	Name			"S-Function"
+	Location		[211, 153, 511, 253]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "ADAMS inputs"
+	  SID			  "2"
+	  Position		  [25, 25, 75, 75]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  "S-Function"
+	  Name			  "S-Function"
+	  SID			  "3"
+	  Ports			  [1, 1]
+	  Position		  [100, 25, 200, 75]
+	  StopFcn		  "clear mex"
+	  FunctionName		  "adams_plant"
+	  Parameters		  "exevie,exesol,stat,outfil,nampre,o_rate,nam_in,namout,dft,modsim,modani,dt_out,inicmd,exetyp,comtyp,"
+	  "ada_host, workdir,pin_interp_order,pout_extrap_order,pin_extrap_order,pout_interp_order,simulink_lead_cosim"
+	  EnableBusSupport	  off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "ADAMS outputs"
+	  SID			  "4"
+	  Position		  [225, 25, 275, 75]
+	  IconDisplay		  "Port number"
+	  InitialOutput		  "0"
+	}
+	Line {
+	  SrcBlock		  "S-Function"
+	  SrcPort		  1
+	  DstBlock		  "ADAMS outputs"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "ADAMS inputs"
+	  SrcPort		  1
+	  DstBlock		  "S-Function"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      StateSpace
+      Name		      "State-Space"
+      SID		      "5"
+      Position		      [135, 175, 235, 225]
+      BackgroundColor	      "red"
+      A			      "ADAMS_a"
+      B			      "ADAMS_b"
+      C			      "ADAMS_c"
+      D			      "ADAMS_d"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "adams_sub"
+      SID		      "6"
+      Ports		      [10, 21]
+      Position		      [285, 66, 335, 274]
+      BackgroundColor	      "orange"
+      ShowPortLabels	      "none"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"adams_sub"
+	Location		[65, 502, 665, 852]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "VRhipR"
+	  SID			  "38"
+	  Position		  [90, 47, 115, 73]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VRhipP"
+	  SID			  "39"
+	  Position		  [75, 67, 100, 93]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VRkneP"
+	  SID			  "40"
+	  Position		  [60, 87, 85, 113]
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VRankP"
+	  SID			  "41"
+	  Position		  [45, 107, 70, 133]
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VRankR"
+	  SID			  "42"
+	  Position		  [30, 127, 55, 153]
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VLhipR"
+	  SID			  "43"
+	  Position		  [15, 147, 40, 173]
+	  Port			  "6"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VLhipP"
+	  SID			  "44"
+	  Position		  [15, 167, 40, 193]
+	  Port			  "7"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VLkneP"
+	  SID			  "45"
+	  Position		  [15, 187, 40, 213]
+	  Port			  "8"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VLankP"
+	  SID			  "46"
+	  Position		  [15, 207, 40, 233]
+	  Port			  "9"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VLankR"
+	  SID			  "47"
+	  Position		  [15, 227, 40, 253]
+	  Port			  "10"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "ADAMS Plant"
+	  SID			  "13"
+	  Ports			  [1, 1]
+	  Position		  [250, 125, 350, 175]
+	  BackgroundColor	  "red"
+	  LoadFcn		  "%check based on dialog box setting for when setting by popup menu                                      "
+	  "       \nif exist('ADAMS_solver_type')                                                                             "
+	  "    \n  if strcmp(ADAMS_solver_type,'C++')                                                                         "
+	  " \n    set_param(gcb,'exetyp','C++');                                                                            \n"
+	  "  else                                                                                                        \n   "
+	  " set_param(gcb,'exetyp','Fortran');                                                                        \n  end "
+	  "                                                                                                        \nelse     "
+	  "                                                                                                     \n  set_param("
+	  "gcb,'exetyp','C++');                                                                              \nend            "
+	  "                                                                                               \n%set the mode if u"
+	  "sing acar_solver                                                                            \n%REQUIRED HERE BECAUS"
+	  "E BELOW CAUSES MDLTERMINATE TO BE CALLED 2 TIMES IN MIDDLE OF SIMULATION WHEN SET IN MASK\n                        "
+	  "                                                                                      \n%enable the direct feedthro"
+	  "ugh, sim mode, anim mode parameters by default                                     \n                              "
+	  "                                                                                \nif exist('set_some_params_states'"
+	  ")                                                                            \n                                    "
+	  "                                                                          \n  set_some_params_states({'dft','modsim"
+	  "','modani'},{'on','on','on'},'MaskEnables',gcb)                        \n  %turn on direct feedthrough option      "
+	  "                                                                    \n  set_some_params_states({'dft'},{'on'},'Mask"
+	  "Visibilities',gcb)                                               \n                                                "
+	  "                                                              \n end                                               "
+	  "                                                           \n                                                      "
+	  "                                                        \n                                                         "
+	  "                                                     \nif exist('ADAMS_exec')                                      "
+	  "                                                  \n  if and(strcmp(get_param(gcb,'exesol'),'ADAMS_exec'),strcmp(AD"
+	  "AMS_exec,'acar_solver'))                       \n    %set the sim mode to discrete -- only supported mode          "
+	  "                                            \n    set_param(gcb,'modsim','discrete')                               "
+	  "                                         \n     %turn off direct feedthrough option                                "
+	  "                                      \n     set_some_params_states({'dft'},{'off'},'MaskVisibilities',gcb)        "
+	  "                                   \n    %set the animation mode to batch -- only supported mode                   "
+	  "                                \n    set_param(gcb,'modani','batch')                                              "
+	  "                             \n    %disable the direct feedthrough, sim mode, anim mode parameters                 "
+	  "                          \n    set_some_params_states({'modsim','modani'},{'off','off'},'MaskEnables',gcb)        "
+	  "                       \n  end                                                                                     "
+	  "                    \nend                                                                                          "
+	  "                 "
+	  InitFcn		  "clear mex"
+	  OpenFcn		  "open_system(gcb,'mask')                                                                                "
+	  "                                          \nif not(exist('set_some_params_states'))                                "
+	  "                                                                          \n                                       "
+	  "                                                                                                          \nwarning"
+	  "('The script \"set_some_params_states.m\" cannot be found in the MATLAB PATH.  Cannot update the ADAMS Plant S-Func"
+	  "tion parameters.')       \n                                                                                        "
+	  "                                                         \nwarning('Recommended action(optional):  run the Adams/Co"
+	  "ntrols .m file first to help choose the correct settings in the Adams S-Function block.')\n                        "
+	  "                                                                                                                   "
+	  "      \nend                                                                                                        "
+	  "                                      "
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  MaskType		  "Adams Plant"
+	  MaskDescription	  "Simulate any Adams plant model either in Adams/Solver form (.adm file) or in Adams/View form (.c"
+	  "md file)"
+	  MaskHelp		  "<html>\nThis S-Function represents the non-linear Adams Plant with the inputs sent to the Adams model "
+	  "<br>\n and the outputs generated by the Adams model.  See the Adams/Controls documentation for more <br>\ninformati"
+	  "on.  This plant uses the following variables:<br>\n<br>\n<b>ADAMS_sysdir  :</b> Adams installation directory<br>\n<"
+	  "b>ADAMS_inputs  :</b> Input variables View names vector<br>\n<b>ADAMS_outputs :</b> Outputs variables View names ve"
+	  "ctor<br>\n<b>ADAMS_prefix  : </b>ADAMS model files prefix (.adm, .cmd); also doubles as output files prefix<br>\n<b"
+	  ">ADAMS_exec :</b> Adams/Solver user library or keyword (e.g., acar_solver)<br> \n<b>ADAMS_static :</b> yes|no - ini"
+	  "tial static before Co-simulation(discrete)/Function Evaluation(continuous)<br>\n<b>ADAMS_init :</b>Initialization c"
+	  "ommands (i.e., Adams/View or Solver commands, depending on setting for Animation mode)<br>\n<b>ADAMS_cwd : </b> Cur"
+	  "rent working directory (for TCP/IP)<br>\n<b>ADAMS_host : </b>Name of Adams server host (for TCP/IP)<br>\n<b>ADAMS_m"
+	  "ode :</b> Linear or non-linear (i.e., co-sim, function eval)<br>\n<b>ADAMS_solver_type :</b>Fortran or C++ (used to"
+	  " set popup menu when first loaded) <br>\n\n\n<br>\nThe following settings can be chosen:<br>\n<br>\n<b>Adams/Solver"
+	  " type:</b>  Fortran or C++ (will also set ADAMS_solver_type)<br>\n<b>Interprocess option:</b> Pipe(DDE) or TCP/IP; "
+	  "TCP/IP can allow different machines run Adams and MATLAB<br>\n<b>Animation mode:</b> batch (Solver, uses .adm) or i"
+	  "nteractive (View, uses .cmd)<br>\n<b>Simulation mode:</b> discrete (Co-simulation) or continuous (Function Evaluati"
+	  "on)<br>\n<b>Discrete Computational Order - Simulink Lead Adams:</b> for discrete mode, chooses if Simulink leads th"
+	  "e integration (yes) or lags (no);<br> if set to \"no\", can remove algebraic loop<br>\n<b>Plant input interpolation"
+	  " order:</b> 0 = zero-order hold; 1 = linear (discrete mode only, where Simulink leads)<br>\n<b>Plant output extrapo"
+	  "lation order:</b> 0 = zero-order hold;1 = linear(discrete mode only, where Simulink leads)<br>\n<b>Plant input extr"
+	  "apolation order:</b> 0 = zero-order hold; 1 = linear (discrete mode only, where Adams leads)<br>\n<b>Plant output i"
+	  "nterpolation order:</b> 0 = zero-order hold;1 = linear(discrete mode only, where Adams leads)<br>\n<b>Direct feedth"
+	  "rough:</b> yes|no - yes = Input directly effect output(continuous mode-only)<br> \n<b>Communication interval:</b> T"
+	  "ime step at which Co-simulation exchange information (e.g.,0.005); also controls <br>output for continuous mode (Fu"
+	  "nction Evaluation)<br>\n<b>Number of communications per output step: </b>Sets Adams output rate (.res, .req, .gra) "
+	  "integer value (default: 1)<br>\n</html>"
+	  MaskPromptString	  "Adams install directory|Adams/View input names|Adams/View output names|Adams model file prefix|"
+	  "Output files prefix (opt.: if blank - no output)|User executable (opt.: if blank - use standard)|Initial static sim"
+	  "ulation flag |Initialization commands|Adams/Solver type|Interprocess option|Adams working directory|Adams host|Anim"
+	  "ation mode|Simulation mode|Direct feedthrough |Discrete Computational Order - Simulink Leads Adams|Plant input inte"
+	  "rpolation order|Plant output extrapolation order|Plant input extrapolation order|Plant output interpolation order|C"
+	  "ommunication interval|Number of communications per output step|More parameters"
+	  MaskStyleString	  "edit,edit,edit,edit,edit,edit,edit,edit,popup(Fortran|C++),popup(PIPE(DDE)|TCP/IP),edit,edit,pop"
+	  "up(batch|interactive),popup(discrete|continuous),popup(no|yes),popup(yes|no),popup(0|1),popup(0|1),popup(0|1),popup"
+	  "(0|1),edit,edit,checkbox"
+	  MaskVariables		  "exevie=@1;nam_in=@2;namout=@3;nampre=@4;outfil=@5;exesol=@6;stat=@7;inicmd=@8;exetyp=&9;comtyp=&1"
+	  "0;workdir=@11;ada_host=@12;modani=&13;modsim=&14;dft=&15;simulink_lead_cosim=&16;pin_interp_order=&17;pout_extrap_o"
+	  "rder=&18;pin_extrap_order=&19;pout_interp_order=&20;dt_out=@21;o_rate=@22;more=@23;"
+	  MaskTunableValueString  "on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on"
+	  MaskCallbackString	  "|||||if exist('set_some_params_states')\n%enable the direct feedthrough, sim mode, anim mode "
+	  "parameters\nset_some_params_states({'dft','modsim','modani'},{'on','on','on'},'MaskEnables',gcb)\n%turn on direct f"
+	  "eedthrough option\nset_some_params_states({'dft'},{'on'},'MaskVisibilities',gcb) \nend\n\nif exist('ADAMS_exec')   "
+	  "\n  if and(strcmp(get_param(gcb,'exesol'),'ADAMS_exec'),strcmp(ADAMS_exec,'acar_solver'))\n    %set the sim mode to"
+	  " discrete -- only supported mode\n    %REMOVED:  BELOW CAUSES MDLTERMINATE TO BE CALLED 2 TIMES IN MIDDLE OF SIMULA"
+	  "TION\n    %Now in LoadFcn callback\n    %set_param(gcb,'modsim','discrete')\n     %turn off direct feedthrough opti"
+	  "on\n    set_some_params_states({'dft'},{'off'},'MaskVisibilities',gcb)\n    %set the animation mode to batch -- onl"
+	  "y supported mode\n    %REMOVED:  BELOW CAUSES MDLTERMINATE TO BE CALLED 2 TIMES IN MIDDLE OF SIMULATION\n    %Now i"
+	  "n LoadFcn callback\n    %set_param(gcb,'modani','batch')\n    %disable the direct feedthrough, sim mode, anim mode "
+	  "parameters\n    set_some_params_states({'modsim','modani'},{'off','off'},'MaskEnables',gcb)\n  end\nend\n\n\n\n|||i"
+	  "f strcmp(get_param(gcb,'exetyp'),'C++')\n    ADAMS_solver_type='C++';\nelse\n    ADAMS_solver_type='Fortran';\nend|"
+	  "if exist('set_some_params_states')\nif strcmp(get_param(gcb,'comtyp'),'PIPE(DDE)')\n    %turn off cwd, host options"
+	  "\n    set_some_params_states({'ada_host','workdir'},{'off','off'},'MaskVisibilities',gcb)\nelse%if strcmp(get_param"
+	  "(gcb,'modsim'),'TCP/IP')\n    %turn on cwd, host options\n    set_some_params_states({'ada_host','workdir'},{'on','"
+	  "on'},'MaskVisibilities',gcb)\nend\nend||||if exist('set_some_params_states')\nif strcmp(get_param(gcb,'modsim'),'di"
+	  "screte')\n     %turn off direct feedthrough option\n    set_some_params_states({'dft'},{'off'},'MaskVisibilities',g"
+	  "cb)\n    %turn on discrete co-sim type if want to see more\n    if strcmp(get_param(gcb,'more'),'on')\n        set_"
+	  "some_params_states({'simulink_lead_cosim'},{'on'},'MaskVisibilities',gcb)\n    end\n    if strcmp(get_param(gcb,'si"
+	  "mulink_lead_cosim'),'yes')\n        %turn on interpolation/extrapolation options\n        set_some_params_states({'"
+	  "pin_interp_order','pout_extrap_order',},{'on','on'},'MaskVisibilities',gcb)\n    else\n        set_some_params_stat"
+	  "es({'pin_extrap_order','pout_interp_order'},{'on','on'},'MaskVisibilities',gcb)\n    end     \nelse%if strcmp(get_p"
+	  "aram(gcb,'modsim'),'continuous')\n     %turn off direct feedthrough option\n    set_some_params_states({'dft'},{'on"
+	  "'},'MaskVisibilities',gcb)\n    %turn off interpolation/extrapolation options\n    set_some_params_states({'pin_int"
+	  "erp_order','pout_extrap_order','pin_extrap_order','pout_interp_order','simulink_lead_cosim'},{'off','off','off','of"
+	  "f','off'},'MaskVisibilities',gcb)\nend\nend||if exist('set_some_params_states')\nif (strcmp(get_param(gcb,'simulink"
+	  "_lead_cosim'),'yes') && strcmp(get_param(gcb,'modsim'),'discrete'))\n     %turn off unused interpolate/extrapolate "
+	  "options\n    set_some_params_states({'pin_extrap_order','pout_interp_order'},{'off','off'},'MaskVisibilities',gcb)\n"
+	  "    %turn on used interpolate/extrapolate options\n    set_some_params_states({'pin_interp_order','pout_extrap_orde"
+	  "r'},{'on','on'},'MaskVisibilities',gcb)   \nelseif (strcmp(get_param(gcb,'simulink_lead_cosim'),'no') && strcmp(get"
+	  "_param(gcb,'modsim'),'discrete'))\n    %turn on used interpolate/extrapolate options\n    set_some_params_states({'"
+	  "pin_extrap_order','pout_interp_order'},{'on','on'},'MaskVisibilities',gcb)\n     %turn off unused interpolate/extra"
+	  "polate options\n    set_some_params_states({'pin_interp_order','pout_extrap_order'},{'off','off'},'MaskVisibilities"
+	  "',gcb) \nend\nend|||||||if exist('set_some_params_states')\nif (strcmp(get_param(gcb,'more'),'on'))\n     %turn on "
+	  "infrequently used options\n    set_some_params_states({'exevie','nam_in','namout','exesol','stat','inicmd'},{'on','"
+	  "on','on','on','on','on'},'MaskVisibilities',gcb) \n    if strcmp(get_param(gcb,'modsim'),'discrete')\n        set_s"
+	  "ome_params_states({'simulink_lead_cosim'},{'on'},'MaskVisibilities',gcb)\n    end\nelseif (strcmp(get_param(gcb,'mo"
+	  "re'),'off'))\n    %turn off infrequently used options\n    set_some_params_states({'exevie','nam_in','namout','exes"
+	  "ol','stat','inicmd'},{'off','off','off','off','off','off'},'MaskVisibilities',gcb)\n    if strcmp(get_param(gcb,'mo"
+	  "dsim'),'discrete')\n        set_some_params_states({'simulink_lead_cosim'},{'off'},'MaskVisibilities',gcb)\n    end"
+	  "\nend\nend\n"
+	  MaskEnableString	  "on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on"
+	  MaskVisibilityString	  "off,off,off,on,on,off,off,off,on,on,off,off,on,on,on,off,on,on,off,off,on,on,on"
+	  MaskToolTipString	  "on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on"
+	  MaskDisplay		  "disp( 'MSC Software' )"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "ADAMS_sysdir|ADAMS_inputs|ADAMS_outputs|ADAMS_prefix|ADAMS_prefix|ADAMS_exec|ADAMS_static|[ADAMS"
+	  "_init]|C++|PIPE(DDE)|ADAMS_cwd|ADAMS_host|batch|discrete|no|yes|0|0|0|0|0.005|1|off"
+	  System {
+	    Name		    "ADAMS Plant"
+	    Location		    [211, 153, 511, 253]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "ADAMS inputs"
+	      SID		      "14"
+	      Position		      [25, 25, 75, 75]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      "S-Function"
+	      Name		      "S-Function"
+	      SID		      "15"
+	      Ports		      [1, 1]
+	      Position		      [100, 25, 200, 75]
+	      StopFcn		      "clear mex"
+	      FunctionName	      "adams_plant"
+	      Parameters	      "exevie,exesol,stat,outfil,nampre,o_rate,nam_in,namout,dft,modsim,modani,dt_out,inicmd,exetyp,"
+	      "comtyp,ada_host, workdir,pin_interp_order,pout_extrap_order,pin_extrap_order,pout_interp_order,simulink_lead_co"
+	      "sim"
+	      EnableBusSupport	      off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "ADAMS outputs"
+	      SID		      "16"
+	      Position		      [225, 25, 275, 75]
+	      IconDisplay	      "Port number"
+	      InitialOutput	      "0"
+	    }
+	    Line {
+	      SrcBlock		      "ADAMS inputs"
+	      SrcPort		      1
+	      DstBlock		      "S-Function"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "S-Function"
+	      SrcPort		      1
+	      DstBlock		      "ADAMS outputs"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Clock
+	  Name			  "Clock"
+	  SID			  "7"
+	  Position		  [200, 277, 225, 303]
+	  Decimation		  "10"
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux"
+	  SID			  "8"
+	  Ports			  [1, 21]
+	  Position		  [400, 50, 450, 250]
+	  BackgroundColor	  "blue"
+	  Outputs		  "21"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux"
+	  SID			  "9"
+	  Ports			  [10, 1]
+	  Position		  [150, 50, 200, 250]
+	  BackgroundColor	  "green"
+	  Inputs		  "10"
+	}
+	Block {
+	  BlockType		  ToWorkspace
+	  Name			  "T To Workspace"
+	  SID			  "10"
+	  Ports			  [1]
+	  Position		  [250, 277, 350, 303]
+	  VariableName		  "ADAMS_tout"
+	  MaxDataPoints		  "100000"
+	  SaveFormat		  "Array"
+	}
+	Block {
+	  BlockType		  ToWorkspace
+	  Name			  "U To Workspace"
+	  SID			  "11"
+	  Ports			  [1]
+	  Position		  [250, 50, 350, 100]
+	  VariableName		  "ADAMS_uout"
+	  MaxDataPoints		  "100000"
+	  SaveFormat		  "Array"
+	}
+	Block {
+	  BlockType		  ToWorkspace
+	  Name			  "Y To Workspace"
+	  SID			  "12"
+	  Ports			  [1]
+	  Position		  [250, 200, 350, 250]
+	  BlockMirror		  on
+	  VariableName		  "ADAMS_yout"
+	  MaxDataPoints		  "100000"
+	  SaveFormat		  "Array"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "body_xangle"
+	  SID			  "17"
+	  Position		  [485, 42, 510, 68]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "body_yangle"
+	  SID			  "18"
+	  Position		  [500, 52, 525, 78]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "body_zangle"
+	  SID			  "19"
+	  Position		  [515, 62, 540, 88]
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Q_5        "
+	  SID			  "20"
+	  Position		  [530, 72, 555, 98]
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Q_4        "
+	  SID			  "21"
+	  Position		  [545, 82, 570, 108]
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Q_3        "
+	  SID			  "22"
+	  Position		  [560, 87, 585, 113]
+	  Port			  "6"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Q_2        "
+	  SID			  "23"
+	  Position		  [575, 97, 600, 123]
+	  Port			  "7"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Q_1        "
+	  SID			  "24"
+	  Position		  [590, 107, 615, 133]
+	  Port			  "8"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Q_10       "
+	  SID			  "25"
+	  Position		  [605, 117, 630, 143]
+	  Port			  "9"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Q_9        "
+	  SID			  "26"
+	  Position		  [620, 127, 645, 153]
+	  Port			  "10"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Q_8        "
+	  SID			  "27"
+	  Position		  [635, 137, 660, 163]
+	  Port			  "11"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Q_7        "
+	  SID			  "28"
+	  Position		  [650, 147, 675, 173]
+	  Port			  "12"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Q_6        "
+	  SID			  "29"
+	  Position		  [665, 157, 690, 183]
+	  Port			  "13"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "R1f        "
+	  SID			  "30"
+	  Position		  [680, 167, 705, 193]
+	  Port			  "14"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "R2f        "
+	  SID			  "31"
+	  Position		  [695, 177, 720, 203]
+	  Port			  "15"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "R3f        "
+	  SID			  "32"
+	  Position		  [710, 187, 735, 213]
+	  Port			  "16"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "R4f        "
+	  SID			  "33"
+	  Position		  [725, 192, 750, 218]
+	  Port			  "17"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "L1f        "
+	  SID			  "34"
+	  Position		  [740, 202, 765, 228]
+	  Port			  "18"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "L2f        "
+	  SID			  "35"
+	  Position		  [755, 212, 780, 238]
+	  Port			  "19"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "L3f        "
+	  SID			  "36"
+	  Position		  [770, 222, 795, 248]
+	  Port			  "20"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "L4f        "
+	  SID			  "37"
+	  Position		  [785, 232, 810, 258]
+	  Port			  "21"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "Clock"
+	  SrcPort		  1
+	  DstBlock		  "T To Workspace"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Mux"
+	  SrcPort		  1
+	  Points		  [20, 0]
+	  Branch {
+	    DstBlock		    "ADAMS Plant"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, -75]
+	    DstBlock		    "U To Workspace"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "ADAMS Plant"
+	  SrcPort		  1
+	  Points		  [15, 0]
+	  Branch {
+	    DstBlock		    "Demux"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 75]
+	    DstBlock		    "Y To Workspace"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  1
+	  DstBlock		  "body_xangle"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  2
+	  DstBlock		  "body_yangle"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  3
+	  DstBlock		  "body_zangle"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  4
+	  DstBlock		  "Q_5        "
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  5
+	  DstBlock		  "Q_4        "
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  6
+	  DstBlock		  "Q_3        "
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  7
+	  DstBlock		  "Q_2        "
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  8
+	  DstBlock		  "Q_1        "
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  9
+	  DstBlock		  "Q_10       "
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  10
+	  DstBlock		  "Q_9        "
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  11
+	  DstBlock		  "Q_8        "
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  12
+	  DstBlock		  "Q_7        "
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  13
+	  DstBlock		  "Q_6        "
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  14
+	  DstBlock		  "R1f        "
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  15
+	  DstBlock		  "R2f        "
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  16
+	  DstBlock		  "R3f        "
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  17
+	  DstBlock		  "R4f        "
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  18
+	  DstBlock		  "L1f        "
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  19
+	  DstBlock		  "L2f        "
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  20
+	  DstBlock		  "L3f        "
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  21
+	  DstBlock		  "L4f        "
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "VRhipR"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "VRhipP"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "VRkneP"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "VRankP"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "VRankR"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  5
+	}
+	Line {
+	  SrcBlock		  "VLhipR"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  6
+	}
+	Line {
+	  SrcBlock		  "VLhipP"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  7
+	}
+	Line {
+	  SrcBlock		  "VLkneP"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  8
+	}
+	Line {
+	  SrcBlock		  "VLankP"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  9
+	}
+	Line {
+	  SrcBlock		  "VLankR"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  10
+	}
+      }
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "body_xangle"
+      SID		      "48"
+      Ports		      [1]
+      Position		      [370, 57, 395, 83]
+      Floating		      off
+      Location		      [188, 365, 512, 604]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      DataFormat	      "Array"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "body_yangle"
+      SID		      "49"
+      Ports		      [1]
+      Position		      [385, 67, 410, 93]
+      Floating		      off
+      Location		      [188, 365, 512, 604]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      DataFormat	      "Array"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "body_zangle"
+      SID		      "50"
+      Ports		      [1]
+      Position		      [400, 77, 425, 103]
+      Floating		      off
+      Location		      [188, 365, 512, 604]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      DataFormat	      "Array"
+    }
+    Line {
+      SrcBlock		      "adams_sub"
+      SrcPort		      1
+      DstBlock		      "body_xangle"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "adams_sub"
+      SrcPort		      2
+      DstBlock		      "body_yangle"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "adams_sub"
+      SrcPort		      3
+      DstBlock		      "body_zangle"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "adams_sub"
+      SrcPort		      4
+      DstBlock		      "Q_5        "
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "adams_sub"
+      SrcPort		      5
+      DstBlock		      "Q_4        "
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "adams_sub"
+      SrcPort		      6
+      DstBlock		      "Q_3        "
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "adams_sub"
+      SrcPort		      7
+      DstBlock		      "Q_2        "
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "adams_sub"
+      SrcPort		      8
+      DstBlock		      "Q_1        "
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "adams_sub"
+      SrcPort		      9
+      DstBlock		      "Q_10       "
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "adams_sub"
+      SrcPort		      10
+      DstBlock		      "Q_9        "
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "adams_sub"
+      SrcPort		      11
+      DstBlock		      "Q_8        "
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "adams_sub"
+      SrcPort		      12
+      DstBlock		      "Q_7        "
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "adams_sub"
+      SrcPort		      13
+      DstBlock		      "Q_6        "
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "adams_sub"
+      SrcPort		      14
+      DstBlock		      "R1f        "
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "adams_sub"
+      SrcPort		      15
+      DstBlock		      "R2f        "
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "adams_sub"
+      SrcPort		      16
+      DstBlock		      "R3f        "
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "adams_sub"
+      SrcPort		      17
+      DstBlock		      "R4f        "
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "adams_sub"
+      SrcPort		      18
+      DstBlock		      "L1f        "
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "adams_sub"
+      SrcPort		      19
+      DstBlock		      "L2f        "
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "adams_sub"
+      SrcPort		      20
+      DstBlock		      "L3f        "
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "adams_sub"
+      SrcPort		      21
+      DstBlock		      "L4f        "
+      DstPort		      1
+    }
+    Annotation {
+      Name		      "Adams/Controls\n2013"
+      Position		      [77, 24]
+    }
+  }
+}
