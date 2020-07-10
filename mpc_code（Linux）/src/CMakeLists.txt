@@ -1,0 +1,32 @@
+SET( CMAKE_BUILD_TYPE Release )
+
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++1y")
+MESSAGE(STATUS "CMAKE_SOURCE_DIR: ${CMAKE_SOURCE_DIR}")
+
+FIND_PACKAGE(Eigen3 REQUIRED)
+INCLUDE_DIRECTORIES(${EIGEN3_INCLUDE_DIR})
+MESSAGE(STATUS "EIGEN3_INCLUDE_DIR: ${EIGEN3_INCLUDE_DIR}")
+
+
+# set(Eigen_INCLUDE_DIRS /usr/include/eigen3)
+set(QP_DIRS ${SRC_PATH}/QP)
+set(MPC_DIRS ${SRC_PATH}/MPC)
+set(Utils_DIRS ${SRC_PATH}/utils)
+
+
+INCLUDE_DIRECTORIES(
+	${SRC_PATH}
+	${Utils_DIRS}
+)
+
+FILE(GLOB SOURCES
+	${SRC_PATH}/main.cpp
+	${Utils_DIRS}/EiQuadProg/*.cpp
+	${QP_DIRS}/*.cpp
+	${MPC_DIRS}/*.cpp
+)
+
+
+include_directories(include)
+
+add_executable(${PROJ_NAME} ${SOURCES})
